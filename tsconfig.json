@@ -4,9 +4,9 @@
     "outDir": "./dist",
     "baseUrl": "",
     "paths": {
-      "@interfaces": [ "src/interfaces/index.ts" ]
+      "@interfaces": ["src/interfaces/index.ts"]
     }
   },
   "include": ["src"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }
