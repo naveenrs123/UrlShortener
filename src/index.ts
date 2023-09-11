@@ -1,10 +1,6 @@
 import express, { Express, Request, Response } from 'express';
-import dotenv from 'dotenv';
 import crypto from 'crypto';
 import { ShortenedUrlReq, ShortenedUrlRes } from '@interfaces';
-import { sequelize } from './database.ts';
-
-dotenv.config();
 
 const app: Express = express();
 const port = process.env.PORT;
@@ -13,13 +9,6 @@ const urlStore2: Map<string, string> = new Map();
 
 // Setup JSON Middleware
 app.use(express.json());
-
-try {
-  await sequelize.authenticate();
-  console.log('SUCCESS');
-} catch (error) {
-  console.log(`ERROR: ${error}}`);
-}
 
 app.get('/', (_: Request, res: Response) => {
   res.send('Welcome');
