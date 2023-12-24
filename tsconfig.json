@@ -4,9 +4,6 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": "",
-    "paths": {
-      "@interfaces": ["src/interfaces/index.ts"]
-    },
   },
   "include": ["src"],
   "exclude": ["node_modules", "src/**/*.test.ts"],

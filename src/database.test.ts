@@ -13,9 +13,6 @@ test('create entry', async () => {
     shortUrl: 'http://localhost:8080/134532a34',
   });
 
-  console.log('HOWDY');
-  console.log(entry);
-
   expect(entry.key).toEqual('134532a34');
 });
 

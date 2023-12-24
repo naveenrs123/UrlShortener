@@ -1,4 +1,4 @@
-export interface ValidShortenedUrlRes {
+interface ValidShortenedUrlRes {
   key: string;
   longUrl: string;
   shortUrl: string;
